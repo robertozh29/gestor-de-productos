@@ -1,14 +1,15 @@
 <template>
     <div class="home container">
         <header>
+          <h1>Tu gestor de productos</h1>
           <h2>Pagina principal</h2>
         </header>
         <div class="menu-container">
           <div class="menu">
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
-            <MenuItem />
+            <MenuItem titulo="Productos"/>
+            <MenuItem titulo="Ventas"/>
+            <MenuItem titulo="Poovedores"/>
+            <MenuItem titulo="Usuarios"/>
             <MenuItem />
             <MenuItem />
           </div>
@@ -39,6 +40,11 @@ header{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+header h1{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
 }
 header h2{
   text-transform: uppercase;
