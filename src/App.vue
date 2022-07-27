@@ -13,6 +13,11 @@ export default {
 </script>
 
 <style>
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -20,5 +25,6 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  
 }
 </style>
