@@ -1,7 +1,19 @@
 <template>
-    <div class="Home container">
-        <h1>Pagina principal</h1>
-        <MenuItem />
+    <div class="home container">
+        <header>
+          <h2>Pagina principal</h2>
+        </header>
+        <div class="menu-container">
+          <div class="menu">
+            <MenuItem />
+            <MenuItem />
+            <MenuItem />
+            <MenuItem />
+            <MenuItem />
+            <MenuItem />
+          </div>
+        </div>
+        
     </div>
 </template>
 
@@ -13,3 +25,39 @@ export default {
     components: { MenuItem }
 }
 </script>
+
+<style>
+.home.container{
+  width: 100%;
+  min-height: 100vh;
+}
+header{
+  height: 30vh;
+  background-color: #f47a00;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h2{
+  text-transform: uppercase;
+}
+
+.menu-container{
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu{
+  max-width: 1300px;
+
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+</style>

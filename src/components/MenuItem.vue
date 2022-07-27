@@ -24,12 +24,15 @@ export default {
     width: 400px;
     height: 250px;
     background-color: #DDD;
-    padding: 10px;
+    padding: 10px;      
+    margin: 15px;
     border-radius: 5px;
+    /* FLEX */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
 .menu-item img{
