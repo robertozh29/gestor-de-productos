@@ -1,13 +1,13 @@
 <template>
-    <div class="menu-item container">
-        <img src="../assets/logo.png" alt="">
-        <div class="descripcion">
-            <h3>{{ titulo }}</h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Officiis, vel corporis harum praesentium temporibus magni.  
-             <router-link :to="getLink">{{ titulo }}</router-link>
+    <router-link :to="getLink">
+        <div class="menu-item container">
+            <img src="../assets/productos.jpg" alt="">
+            <div class="descripcion">
+                <h3>{{ titulo }}</h3>
+                Revisa tus ventas hechas 
+            </div>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script>
@@ -36,10 +36,9 @@ export default {
 
 .menu-item{
     cursor: pointer;
-    max-width: 300px;
-    max-height: 180px;
-    background-color: #DDD;
-    padding: 10px;      
+    width: 380px;
+    height: 250px;
+    background-color: #FFF;   
     margin: 15px;
     border-radius: 5px;
     /* FLEX */
@@ -47,10 +46,30 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* BOX SHADOW */
+    -webkit-box-shadow: 0 2px 4px 0 rgb(60 64 67 / 20%);
+    box-shadow: 0 2px 4px 0 rgb(60 64 67 / 20%);
+    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.menu-item:hover{
+    -webkit-box-shadow: 0 3px 6px 0 rgb(60 64 67 / 30%);
+    box-shadow: 0 3px 6px 0 rgb(60 64 67 / 30%);
 }
 
 .menu-item img{
-    height: 10%;
+    width: 100%;
+    height: 75%;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 25%;
+    padding: 0 15px;   
+    text-align: start;
 }
 </style>

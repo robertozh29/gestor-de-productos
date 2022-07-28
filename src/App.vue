@@ -7,7 +7,6 @@
 export default {
   name: 'App',
   components: {
-   
   }
 }
 </script>
@@ -27,4 +26,15 @@ export default {
   min-height: 100vh;
   min-width: 100vw;
 }
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+.header-component{
+  height: 25vh;
+  width: 100%;
+}
+
 </style>

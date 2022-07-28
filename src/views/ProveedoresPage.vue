@@ -1,6 +1,6 @@
 <template>
     <div class="login container">
-        <HeaderComponent pagina="Ventas"/>
+        <HeaderComponent pagina="Proveedores"/>
     </div>
 </template>
 
