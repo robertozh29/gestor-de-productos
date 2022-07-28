@@ -1,29 +1,34 @@
 <template>
     <div class="home container">
-        <header>
-          <h1>Tu gestor de productos</h1>
-          <h2>Pagina principal</h2>
-        </header>
+        <HeaderComponent />
         <div class="menu-container">
           <div class="menu">
-            <MenuItem titulo="Productos"/>
-            <MenuItem titulo="Ventas"/>
-            <MenuItem titulo="Poovedores"/>
-            <MenuItem titulo="Usuarios"/>
-            <MenuItem />
-            <MenuItem />
+            <MenuItem 
+              titulo="Productos"
+              link="productos"
+            />
+            <MenuItem 
+              titulo="Ventas"
+              link="ventas"
+            />
+            <MenuItem 
+              titulo="Provedores"           
+            />
+            <MenuItem 
+              titulo="Administrar"
+            />
           </div>
-        </div>
-        
+        </div>       
     </div>
 </template>
 
 <script>
 import MenuItem from '../components/MenuItem.vue'
+import HeaderComponent from '../components/HeaderComponent.vue'
 
 export default {
     name: "home-page",
-    components: { MenuItem }
+    components: { MenuItem, HeaderComponent }
 }
 </script>
 
@@ -59,8 +64,7 @@ header h2{
 }
 
 .menu{
-  max-width: 1300px;
-
+  max-width: 700px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;

@@ -1,6 +1,15 @@
 <template>
     <div class="login container">
-        <h1>Tus productos</h1>
-        <router-link to="/">Menu inicial</router-link> |
+        <HeaderComponent pagina="Productos"/>
     </div>
 </template>
+
+<script>
+import HeaderComponent from '@/components/HeaderComponent.vue';
+
+export default {
+    name: "productos-page",
+    components: { HeaderComponent}
+}
+
+</script>

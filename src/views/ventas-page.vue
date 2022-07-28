@@ -1,5 +1,15 @@
 <template>
     <div class="login container">
-        <h1>Comenzar a vender</h1>
+        <HeaderComponent pagina="Ventas"/>
     </div>
 </template>
+
+<script>
+import HeaderComponent from '@/components/HeaderComponent.vue';
+
+export default {
+    name: "ventas-page",
+    components: { HeaderComponent }
+}
+
+</script>

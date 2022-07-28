@@ -4,10 +4,8 @@
         <div class="descripcion">
             <h3>{{ titulo }}</h3>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Officiis, vel corporis harum praesentium temporibus magni. 
-            Porro delectus reprehenderit atque ab, quam culpa, ex quas nam,
-             quis incidunt eaque unde maxime!
-             <router-link to="/productos">Productos</router-link>
+            Officiis, vel corporis harum praesentium temporibus magni.  
+             <router-link :to="getLink">{{ titulo }}</router-link>
         </div>
     </div>
 </template>
@@ -20,6 +18,15 @@ export default {
     titulo:{
         type: String,
         default: "opcion"
+    },
+    link:{
+        type: String,
+        default: ""
+    }
+  },
+  computed:{
+    getLink(){
+        return "/" + this.link;
     }
   }
 }
@@ -29,8 +36,8 @@ export default {
 
 .menu-item{
     cursor: pointer;
-    width: 400px;
-    height: 250px;
+    max-width: 300px;
+    max-height: 180px;
     background-color: #DDD;
     padding: 10px;      
     margin: 15px;
